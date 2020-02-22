@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1D1B16;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  z-index: 100;
+  width: 300px;
+  height: 460px;
+  background-color: #26282A;
+  border-radius: 30px;
+  position: absolute;
+  padding: 20px;
+  display: grid;
+  grid: repeat(6, 1fr)/ repeat(4, 1fr);
+  place-items: center;
+}
+
+span {
+  grid-area: 1/1/2/5;
+  color: #fff;
+  text-align: right;
+  display: grid;
+  width: 95%;
+  height: 80px;
+}
+
+section hr{
+  grid-area: 1/1/2/5;
+  align-self: flex-end;
+  border: 1px solid #C99F3E;
+  width: 100%;
+}
+
+span i:nth-child(1) {
+  color: #888888;
+}
+
+span i:nth-child(2) {
+  font-size: 50px;
+  color: #C99F3E;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  transition: .2s;
+}
+
+button:active {
+  transform: scale(.8, .8);
+}
+
+.circle {
+  position: absolute;
+  background-color: #C99F3E;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+
+.operations {
+  color: #C99F3E;
+}
+
+.equal {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #C99F3E;
+  grid-column: 4/5;
+}
